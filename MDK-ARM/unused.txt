@@ -1,0 +1,22 @@
+if (HAL_I2C_IsDeviceReady(&hi2c1, TAS3251_I2C_ADDR << 1, 3, 10) == HAL_OK) {
+      WS2812_Send_Data(1,0,64,0);
+  }
+  else{
+      WS2812_Send_Data(1,64,0,0);
+  }
+HAL_Delay(1000);
+
+      /*pvdd_mv = Get_PVDD_mV();
+      if(pvdd_mv <= 15000){
+          WS2812_Send_Data(1,64,32,0);
+      }
+      else{
+          WS2812_Send_Data(1,0,64,0);
+      }*/
+      temp = Get_ADC_Code_Per_Volt();
+      pvdd_mv = (((uint32_t)temp * 4095)/1000UL);
+      
+      
+          //I2C_WriteReg(TAS3251_I2C_ADDR,0x04,0x00);//禁用PLL，使用MCLK
+    //I2C_WriteReg(TAS3251_I2C_ADDR,0x0D,0x03);//DSP时钟源为MCLK
+    //I2C_WriteReg(TAS3251_I2C_ADDR,0x0E,0x30);//DAC时钟源为MCLK，OSR时钟源为DAC时钟，NCP时钟源为DAC时钟

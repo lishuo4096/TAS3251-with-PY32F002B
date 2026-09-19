@@ -1,0 +1,257 @@
+{
+  "appVersion": "0.6.38",
+  "gitHash": "73f4192a4d8e332d92f8b98f9ee271a9cfa9b24a",
+  "createTime": 1789131448120,
+  "lastTime": 1789131448120,
+  "version": 6,
+  "name": "TAS3251_EVM",
+  "platform": "MDK-ARM",
+  "vendor": "Puya",
+  "serial": "PY32F002B",
+  "series": "PY32F002B",
+  "chip": "PY32F002BF15U6",
+  "firmversion": "V1.2.1",
+  "frameWork": "cortex-m0+",
+  "minstack": "0x200",
+  "minheap": "0x100",
+  "ramSize": "0xC00",
+  "flashSize": "0x6000",
+  "default_firmware_location": true,
+  "custom_firmware_location": "",
+  "library_copy": "all",
+  "data": {
+    "lastTime": 1789643175012,
+    "version": 6,
+    "gpioBindings": {
+      "version": 1,
+      "rows": [
+        {
+          "pinName": "PB3",
+          "locked": true,
+          "source": "manual",
+          "alternates": [
+            "I2C1_SCL"
+          ],
+          "primarySignal": "I2C1_SCL"
+        },
+        {
+          "pinName": "PB4",
+          "locked": true,
+          "source": "manual",
+          "alternates": [
+            "I2C1_SDA"
+          ],
+          "primarySignal": "I2C1_SDA"
+        },
+        {
+          "pinName": "PB5",
+          "locked": true,
+          "source": "manual",
+          "alternates": [
+            "GPIO_Output"
+          ],
+          "primarySignal": "GPIO_Output"
+        },
+        {
+          "pinName": "PB6",
+          "locked": true,
+          "source": "manual",
+          "alternates": [
+            "SWD"
+          ],
+          "primarySignal": "SWD"
+        },
+        {
+          "pinName": "PA2",
+          "locked": true,
+          "source": "manual",
+          "alternates": [
+            "SWC"
+          ],
+          "primarySignal": "SWC"
+        },
+        {
+          "pinName": "PC0",
+          "locked": true,
+          "source": "manual",
+          "alternates": [
+            "NRST"
+          ],
+          "primarySignal": "NRST"
+        },
+        {
+          "pinName": "PB2",
+          "locked": true,
+          "source": "manual",
+          "alternates": [
+            "GPIO_Output"
+          ],
+          "primarySignal": "GPIO_Output"
+        },
+        {
+          "pinName": "PA5",
+          "locked": true,
+          "source": "manual",
+          "alternates": [
+            "GPIO_Output"
+          ],
+          "primarySignal": "GPIO_Output"
+        },
+        {
+          "pinName": "PA6",
+          "locked": true,
+          "source": "manual",
+          "alternates": [
+            "GPIO_Input"
+          ],
+          "primarySignal": "GPIO_Input"
+        },
+        {
+          "pinName": "PA4",
+          "locked": true,
+          "source": "manual",
+          "alternates": [
+            "GPIO_Input"
+          ],
+          "primarySignal": "GPIO_Input"
+        },
+        {
+          "pinName": "PA3",
+          "locked": true,
+          "source": "manual",
+          "alternates": [
+            "ADC_IN1"
+          ],
+          "primarySignal": "ADC_IN1"
+        }
+      ]
+    },
+    "value": {
+      "PB3;I2C1_SCL": {
+        "type": "pins-af",
+        "order": 1
+      },
+      "PB4;I2C1_SDA": {
+        "type": "pins-af",
+        "order": 2
+      },
+      "PB5;GPIO_Output": {
+        "type": "pins-af",
+        "order": 3
+      },
+      "PB6;SWD": {
+        "type": "pins-af",
+        "order": 4
+      },
+      "PA2;SWC": {
+        "type": "pins-af",
+        "order": 5
+      },
+      "PC0;NRST": {
+        "type": "pins-af",
+        "order": 6
+      },
+      "PB2;GPIO_Output": {
+        "type": "pins-af",
+        "order": 7
+      },
+      "PA5;GPIO_Output": {
+        "type": "pins-af",
+        "order": 8
+      },
+      "PA6;GPIO_Input": {
+        "type": "pins-af",
+        "order": 9
+      },
+      "PA4;GPIO_Input": {
+        "type": "pins-af",
+        "order": 11
+      },
+      "PA3;ADC_IN1": {
+        "type": "pins-af",
+        "order": 12
+      },
+      "GPIO.GPIO.body.PB2.speed.value": {
+        "type": "global-value",
+        "order": 13,
+        "value": "High"
+      },
+      "GPIO.GPIO.body.PA6.pull.value": {
+        "type": "global-value",
+        "order": 14,
+        "value": "Up"
+      },
+      "GPIO.GPIO.body.PA4.pull.value": {
+        "type": "global-value",
+        "order": 16,
+        "value": "Up"
+      },
+      "TIM14.NVIC.body.TIM14_IRQn.enable.value": {
+        "type": "global-value",
+        "order": 20,
+        "value": true
+      },
+      "TIM14.Parameter.CounterSettings.CounterPeriod.value": {
+        "type": "global-value",
+        "order": 22,
+        "value": "23999"
+      },
+      "TIM14.Parameter.CounterSettings.AutoReloadPreload.value": {
+        "type": "global-value",
+        "order": 25,
+        "value": "enable"
+      },
+      "TIM14.Parameter.CounterSettings.Prescaler.value": {
+        "type": "global-value",
+        "order": 27,
+        "value": "29"
+      },
+      "I2C1.Parameter.I2CSpeedMode.value": {
+        "type": "global-value",
+        "order": 28,
+        "value": "FastMode"
+      },
+      "I2C1.Parameter.OwnAddress1.value": {
+        "type": "global-value",
+        "order": 29,
+        "value": "0x00"
+      },
+      "I2C1.enable": {
+        "type": "global-enable",
+        "order": 31,
+        "value": true
+      },
+      "TIM14.enable": {
+        "type": "global-enable",
+        "order": 33,
+        "value": true
+      },
+      "ADC1.enable": {
+        "type": "global-enable",
+        "order": 35,
+        "value": true
+      },
+      "ADC1.Parameter.ADCRegularConversionMode.SamplingTime.value": {
+        "type": "global-value",
+        "order": 36,
+        "value": "cycles135"
+      },
+      "ADC1.Parameter.ADCSettings.Overrun.value": {
+        "type": "global-value",
+        "order": 37,
+        "value": "overwritten"
+      },
+      "ADC1.Mode.IN_VREFINT.value": {
+        "type": "global-value",
+        "order": 38,
+        "value": true
+      },
+      "ADC1.Parameter.ADCSettings.VrefBuffer.value": {
+        "type": "global-value",
+        "order": 40,
+        "value": "vcca"
+      }
+    }
+  },
+  "templateVersion": 2
+}
